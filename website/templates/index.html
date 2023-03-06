@@ -418,6 +418,185 @@
 
     </section><!-- End Features Section -->
 
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Портфолио</h2>
+        <p>Подробнее о решений задач в проектах</p>
+      </header>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">Все</li>
+            <li data-filter=".filter-app">ЦОД</li>
+            <li data-filter=".filter-card">Построение Сети</li>
+            <li data-filter=".filter-web">Телефония</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>ТГУ</h4>
+              <p>Томский Государсвенный Университет</p>
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="В рамках проекта Заказчиком были поставлены задачи по повышению производительности приложений, сокращению сроков внедрения информационных сервисов, снижению расходов на электроэнергию и охлаждение. Специалистами компании «Интант» была предложено решение на базе Cisco Data Center 3.0, которое позволяет создать центр обработки данных, используя 10-гигабитную архитектуру сети передачи данных, внедрить систему виртуализации, пользоваться унифицированной коммуникационной матрицей и перейти к облачными вычислениями. Одной из составных частей данной модели является система Cisco Unified Computing System, которая объединяет вычислительные и сетевые ресурсы, системы хранения и виртуализации в рамках единого энергетически эффективного комплекса. Это позволяет снизить стоимость и сложность информационно-технологической инфраструктуры, оптимизировать использование капитальных активов и повысить гибкость бизнеса. Основанная на отраслевых стандартах платформа Cisco Unified Computing System представляет собой новую вычислительную среду с интегрированным управлением и унифицированной матрицей коммутации. В результате заказчик получает стандартную вычислительную платформу, способную оптимизировать виртуализацию, сократить совокупную стоимость эксплуатации центров обработки данных и поддержать динамическое распределение ресурсов, повышающее гибкость процессов. Для обеспечения требуемого количества вычислительных ресурсов на площадке было установлено два шасси Cisco UCS 5108 c 16 блейд-серверами. Встроенные в шасси два модуля ввода/вывода 2208XP обеспечивают поддержку работы на скоростях 80 Гбит/с и 160 Гбит/с на каждое шасси, что позволяет обрабатывать пиковые всплески трафика. Этот модуль поддерживает также функцию канализирования портов, позволяющую балансировать нагрузку на все порты и повышать эффективность и надежность связи за счет оптимального использования каналов и полосы пропускания. Решение Cisco UCS 6248UP Fabric Interconnect может осуществлять коммутацию трафика Ethernet, FC и FCoE в системе UCS на скорости до 960 Гбит/с . Данное решение поддерживает гибкость масштабной инфраструктуры с помощью унифицированных портов, а также повышает энергоэффективность. Решение Cisco UCS 6200 в сочетании с решением Cisco Nexus® Fabric Extender еще больше увеличивает преимущества Cisco UCS Manager при крупномасштабных внедрениях UCS на базе блейд-серверов."><i class="bi bi-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>ТПУ</h4>
+              <p>Томский Политехнический Университет</p>
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Специалисты компании Интант завершили работы по модернизации оборудования и объединению основного и резервного центра обработки данных для Томского Политехнического Университета Сети резервных центров применяются в ИТ-отрасли уже много лет для защиты критических приложений от разного рода серьезных аварий и катастроф. Перед специалистами стояла задача гарантировать непрерывность работы ИТ-инфраструктуры в случае выхода из строя основного вычислительного центра и максимально минимизировать время недоступности информационных систем университета. Для реализации сохранности и доступности данных между площадками центров обработки данных была построена выделенная сеть хранения данных с использованием протокола FC. Данная схема миграции данных представляет собой репликацию данных приложений из основного центра в резервный в синхронном режиме или выполнение резервного копирования из основного центра в резервный. В качестве поставщика оборудования для реализации данной сети использовались FC коммутаторы производства компании Brocade Communications Systems. В качестве систем хранения данных были выбраны EMC VNX 5300 unified собранные в единый домен, которые предоставляют как файловый, так и блочный доступ. Для создания сети передачи данных, на каждой из площадок было установлено по два коммутатора Cisco Nexus, взаимодействие между площадками реализовано с использованием технологии virtual Port Channel, что обеспечивает непрерывную передачу данных при отказе любого единичного компонента сети передачи данных. Для более гибкого управления вычислительными ресурсами на обеих площадках была внедрена система унифицированных вычислений Cisco Unified Computing System (UCS). Система Cisco Unified Computing System (UCS) и серверы Cisco объединяют вычисления, сети, средства управления, виртуализации и доступа к СХД в единую интегрированную архитектуру. Эта уникальная архитектура обеспечивает полномасштабный контроль и управление серверами в физических и виртуальных средах и упрощает переход к облачным вычислениям. Cisco UCS Manager абстрагирует все серверные аспекты в программном обеспечении, благодаря чему администратор может программно смоделировать желаемый сервер (определить сервисный профиль), а затем создать экземпляр данного сервера."><i class="bi bi-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Лесоперерабатывающий комбинат (Завод МДФ)</h4>
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="В марте-апреле 2008г, специалистами управления корпоративных проектов нашей компании был разработан концептуальный проект построения системы телефонной связи на промплощадке ООО «ЛПК Партнер-Томск». Сеть телефонной связи ООО «ЛПК Партнер-Томск» построена на базе оборудования Avaya. Ядро отказоустойчивой системы составляют взаиморезервируемые медиа-сервера Avaya S8730 и медиа-шлюзы Avaya G650. Взаимодействие Avaya S8730 и Avaya G650 осуществляется через мультисервисную сеть передачи данных предприятия. Построение сети телефонной связи на базе управляющих серверов Avaya S8730 позволяет при дальнейшем развитии сети телефонной связи внедрить следующие сервисы:
+                оперативно-диспетчерская связь;
+                службы Call Center и Contact Center;
+                система беспроводной связи стандарта DECT и/или WiFi масштаба предприятия;
+                конференц-связь;
+                и предоставляет возможность интеграции с другими подсистемами (например, системой громкоговорящей связи, системой оповещения и т.п.). Построение сети телефонной связи, в соответствии с концептуальным проектом, разработанным специалистами группы компаний «Интант», при дальнейшем развитии завода, позволит обеспечить стабильную телефонную связь во всех структурных подразделениях ООО «ЛПК Партнер-Томск», быстрое включение новых корпусов предприятия в единую телефонную сеть с единым номерным пространством, доступность сервисов всем абонентам телефонной сети."><i class="bi bi-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>ТУСУР</h4>
+              <p>Томский Университет Систем Управления и Радиоэлектроники</p>
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="В рамках проекта национального проекта «Образование» для Томского университета Систем Управления и радиоэлектроники был разработан проект, поставлено оборудование и введена в эксплуатацию мультисервисная сеть передачи данных на базе оборудования Cisco Systems, включающая:
+                ядро сети, использующее технологию MPLS;
+                модуль распределения;
+                беспроводная сеть, охватывающая все корпуса ТУСУРа, и имеющая единое централизованное управление;
+                опытный сегмент IP-телефонии;
+                модуль централизованного управления сетью;
+                модуль внешних подключений (сопряжение с сетями общего пользования).
+                Созданная сеть объединяет более 4000 компьютеров, расположенных в 4-х корпусах Университета."><i class="bi bi-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Администрация Томской области</h4>
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="В рамках выполнения государственного контракта специалистами группы компаний 'Интант' завершены комплексные работы по созданию мультисервисной сети и системы информационной безопасности органов государственной власти Томской области и местного самоуправления. В ходе реализация проекта была разработана стратегия развития мультисервисной сети передачи данных, которая обеспечивает модернизацию существующих и построение новых сетей связи, с учетом требований предъявляемых к современным технологиям передачи конфиденциальной информации и персональных данных по защищенным каналам связи. В области защиты данных, обрабатываемых и передаваемых в информационных системах органов государственной власти, и выполнения требований, регламентируемых действующим законодательством, в органах государственной власти был проведен аудит информационных систем персональных данных (ИСПДн). На основе проведенного аудита для каждого объекта был сформирован базовый пакет документации, который позволяет определить существующий уровень соответствия систем обработки персональных данных (ПДн) требованиям руководящих документов ФСБ, ФСТЭК и Роскомнадзора в области защиты персональных данных в автоматизированных системах обработки ПДн, а так же разработан пакет рекомендаций по приведению ИСПДн в соответствие требованиям ФЗ 152 "><i class="bi bi-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>ТНХК</h4>
+              <p>Томский Нефтехимический комбинат</p>
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Специалистами группы компаний «Интант» была разработана проектно-сметная документация корпоративной мультисервисной сети предприятия, охватывающей более 80 зданий на территории промышленной площадки ООО «Томскнефтехим». Проект включал в себя:
+                структурированные кабельные системы и оборудование внутри зданий – более 2,5 тыс. портов;
+                наружные оптоволоконные линии связи протяженностью - более 60 км;
+                строительство и оборудование центров обработки данных (ЦОД);
+                прокладку питающих электрических сетей 0,4кВ;
+                разработку и установку щитов АВР и распределительных силовых щитов;
+                системы бесперебойного питания APC InfraStruXture мощностью до 40кВА;
+                системы прецизионного кондиционирования;
+                системы охранно-пожарной сигнализации и автоматического пожаротушения и т.д.
+                Кроме того, разработаны беспроводные решения по подключению к сети передачи данных удаленных объектов. Особенностью проекта является использование самых современных подходов, технологий и оборудования. Спроектированная сеть способна не только обслуживать информационные потоки системы управления предприятием, но так же удовлетворить потребности в передаче информации энергетиков, связистов, службы АСУТП, службы безопасности и других. При этом решаются проблемы безопасности и взаимной изоляции различных подсистем в рамках единой корпоративной сети, а так же проблемы предоставления гарантированного качества обслуживания для различных подсистем и информационных потоков. В дальнейшем, Специалистами группы компаний «Интант», реализована первая, вторая и частично третья очередь проекта, что позволило связать в единую сеть 18 основных административных и производственных корпусов. В процессе выполнения работ проложено, протестировано и паспортизировано 18 волоконно-оптических линий связи общей длиной 19 км. Выполнен монтаж СКС в 9-ти этажном здании заводоуправления (более 1000 портов). Полностью оборудован ЦОД и часть опорных пунктов на территории. Решены проблемы энергоснабжения ЦОД и опорных пунктов –смонтированы щиты АВР (аварийного ввода резерва), вводно-распределительные и распределительные щиты, проложены новые питающие линии, установлен модульный источник бесперебойного питания топологии «on line» Symmetra LX 16 kVA. Реализован проект систем пожарной сигнализации, газового пожаротушения и контроля и управления доступом в опорных пунктах и ЦОД."><i class="bi bi-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Красноярский краевой медицинский информационно-аналитический центр</h4>
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Группа компаний «Интант» создала систему видеоконференцсвязи для нужд Красноярского краевого медицинского информационно-аналитического центра. Решение ВКС строилось на базе оборудования Telepresence компании Cisco Systems. В основу предложенного решения вошли такие продукты:
+                сервер сигнализации, используемый для управления вызовами, на базе программно-аппаратного комплекса Cisco VCS Control
+                сервер управления системой ВКС на базе программно-аппаратного комплекса Cisco TMS
+                мост видеоконференцсвязи для организации многоточечной связи на базе Cisco MCU 4200 и устройства конечных абонентов на основе программных клиентов Cisco Movi.
+                Система позволяет организовывать видеоконференции с общим количеством до 30 одновременных участников, предоставляет возможность подключения в ВКС по Web, возможность использовать видео высокого разрешения, формирует индивидуальные видео-потоки для каждого абонента в зависимости от его условий и требований с возможностью транскодирования в режиме реального времени. Реализованная сисетма является многофункциональной и масштабируемой, поддерживает возможность подключения в будущем конференц-комнат и систем комбинированного назначения без модернизации ядра системы."><i class="bi bi-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>ТВТ «Томск»</h4>
+              <p>Центр Инноваций и Технологий ОЭЗ</p>
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Специалисты Группы компаний «Интант» совместно с Филиалом ФГУП «ИСК «Росатомстрой» ТГПИИ «ВНИПИЭТ» приняли участие в проектировании здания ЦИТ. По ходу исполнения проекта, специалистами группы компаний «Интант» были спроектированы структурированная кабельная система (СКС) здания, сетевая инфраструктура сети передачи данных (СПД), серверная группа и хранилище центра обработки данных (ЦОД), сеть телефонной связи (СТС) и система гарантированного питания оборудования СТС, ЦОД и СПД. Использованные продукты и решения:
+                СКС SignaMax (полностью соответствует международному стандарту ISO/IEC 11801 2nd Edition на слаботочные кабельные системы зданий и сертифицируется производителем и на нее предоставляется гарантия компании-производителя «AESP Inc.» сроком на 20 лет)
+                дублируемые шассийные коммутаторы Cisco Catalyst 6500
+                коммутаторы Cisco WS-C2960-24TT-L и WS-C2960-48TT-L
+                технологии виртуализации от компании VMware"><i class="bi bi-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static  'assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Региональная нефтяная компания</h4>              
+              <div class="portfolio-links">
+                <a href="{% static  'assets/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Специалисты Группы компаний «Интант» "><i class="bi bi-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  <!-- </section>End Portfolio Section -->
+
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
 
@@ -659,161 +838,6 @@
       </div>
 
     </section><!-- End F.A.Q Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Portfolio</h2>
-          <p>Check our latest work</p>
-        </header>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static  'assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="{% static  'assets/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
-
-    <!-- </section>End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">

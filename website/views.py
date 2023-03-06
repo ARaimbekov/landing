@@ -8,6 +8,9 @@ def index(request):
     return render(request, 'index.html')
 
 
+def portfolio(request):
+    return render(request, 'portfolio-details.html')
+    
 # def get_file(request):
 #     response = FileResponse(open('/home/r2d2/intants_website/media/Руководство_пользователя.docx', 'rb'))
 #     return response

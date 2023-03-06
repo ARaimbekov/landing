@@ -37,6 +37,7 @@ def index(request):
 def send_message(name, email, subject, message):
     pass
 
+
 def get_file(request):
     response = FileResponse(open('/app/media/Руководство_пользователя.docx', 'rb'))
     return response

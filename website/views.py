@@ -18,7 +18,7 @@ def index(request):
             email = request.POST['email']
             subject = request.POST['subject']
             message = request.POST['message']
-            with open("/home/r2d2/intants_website/media/request.txt", "a") as file:
+            with open("./media/request.txt", "a") as file:
                 file.write('\n')
                 file.write('--------------'+ '\n')
                 file.write('Имя' + name + 'Е-mail' + email + '\n')

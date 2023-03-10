@@ -22,7 +22,7 @@ class ContactForm(forms.Form):
     )
 
     message = forms.CharField(
-        max_length=20,
+        max_length=200,
         widget=forms.Textarea(
             attrs={'placeholder': 'Сообщение', 'class': 'form-control', 'rows': 6}
         )

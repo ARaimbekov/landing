@@ -39,18 +39,18 @@ def send_message(name, email, subject, message):
 
 
 def get_file(request):
-    response = FileResponse(open('/app/media/Руководство_пользователя.docx', 'rb'))
+    response = FileResponse(open('/app/media/Руководство_пользователя.pdf', 'rb'))
     return response
 
 def get_file2(request):
-    response = FileResponse(open('/app/media/Описание_продукта.docx', 'rb'))
+    response = FileResponse(open('/app/media/Описание_продукта.pdf', 'rb'))
     return response
 
 def get_file3(request):
-    response = FileResponse(open('/app/media/Руководство_администратора.docx', 'rb'))
+    response = FileResponse(open('/app/media/Руководство_администратора.pdf', 'rb'))
     return response
 
 def get_file4(request):
-    response = FileResponse(open('/app/media/Пошаговая_инструкция_установки_ПО.docx', 'rb'))
+    response = FileResponse(open('/app/media/Пошаговая_инструкция_установки_ПО.pdf', 'rb'))
     return response
 

@@ -1,0 +1,6 @@
+
+--------------
+ИмяAzimЕ-mailtest@mail.ru
+Тема письма
+TestТекст письма
+Test message for

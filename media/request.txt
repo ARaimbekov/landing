@@ -1,6 +1,6 @@
 
 --------------
-ИмяAzimЕ-mailtest@mail.ru
+ИмяYoung StudentЕ-mailtest@mail.ru
 Тема письма
 TestТекст письма
 Test message for

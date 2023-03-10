@@ -1,0 +1,210 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Intans интегратор</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/logo.png' %}" rel="icon">
+  <link href="{% static  'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static  'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static  'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static  'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static  'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static  'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static  'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'website:index' %}" class="logo d-flex align-items-center">
+        <img src="{% static  'assets/img/logo.png' %}" alt="">
+        <span>Интант-Сервис</span>
+      </a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a type="button" onclick="history.back();">На главную</a></li>
+          <li>Детали портфолио</li>
+        </ol>
+        <h2>Детали портфолио</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{% static  'assets/img/portfolio/portfolio-1.jpg' %}" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Информация по проекту</h3>
+              <ul>
+                <li><strong>Категория</strong>: Веб дизайн</li>
+                <li><strong>Заказчик</strong>: ТГУ</li>
+                <li><strong>Дата выполнения проекта</strong>: 01 March, 2021</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Описание</h2>
+              <p>
+                В рамках проекта Заказчиком были поставлены задачи по повышению производительности приложений, сокращению сроков внедрения информационных сервисов, снижению расходов на электроэнергию и охлаждение. Специалистами компании «Интант» была предложено решение на базе Cisco Data Center 3.0, которое позволяет создать центр обработки данных, используя 10-гигабитную архитектуру сети передачи данных, внедрить систему виртуализации, пользоваться унифицированной коммуникационной матрицей и перейти к облачными вычислениями. Одной из составных частей данной модели является система Cisco Unified Computing System, которая объединяет вычислительные и сетевые ресурсы, системы хранения и виртуализации в рамках единого энергетически эффективного комплекса. Это позволяет снизить стоимость и сложность информационно-технологической инфраструктуры, оптимизировать использование капитальных активов и повысить гибкость бизнеса. Основанная на отраслевых стандартах платформа Cisco Unified Computing System представляет собой новую вычислительную среду с интегрированным управлением и унифицированной матрицей коммутации. В результате заказчик получает стандартную вычислительную платформу, способную оптимизировать виртуализацию, сократить совокупную стоимость эксплуатации центров обработки данных и поддержать динамическое распределение ресурсов, повышающее гибкость процессов. Для обеспечения требуемого количества вычислительных ресурсов на площадке было установлено два шасси Cisco UCS 5108 c 16 блейд-серверами. Встроенные в шасси два модуля ввода/вывода 2208XP обеспечивают поддержку работы на скоростях 80 Гбит/с и 160 Гбит/с на каждое шасси, что позволяет обрабатывать пиковые всплески трафика. Этот модуль поддерживает также функцию канализирования портов, позволяющую балансировать нагрузку на все порты и повышать эффективность и надежность связи за счет оптимального использования каналов и полосы пропускания. Решение Cisco UCS 6248UP Fabric Interconnect может осуществлять коммутацию трафика Ethernet, FC и FCoE в системе UCS на скорости до 960 Гбит/с . Данное решение поддерживает гибкость масштабной инфраструктуры с помощью унифицированных портов, а также повышает энергоэффективность. Решение Cisco UCS 6200 в сочетании с решением Cisco Nexus® Fabric Extender еще больше увеличивает преимущества Cisco UCS Manager при крупномасштабных внедрениях UCS на базе блейд-серверов. В качестве блейд-серверовCisco UCS были использованы сервера Cisco UCS B200 M3 с процессорами Intel® Xeon® E5-2600, которые имеют больше процессорных ядер, кэш-памяти, оперативной памяти, дискового пространства и пользуются более высокоскоростными каналами, ускоряющими передачу данных. Эти серверы обладают лучшей в отрасли производительностью, энергоэффективностью, функциональностью и экономичностью. Сервер корпоративного класса Cisco UCS B200 M3 предоставляет заказчику высокую производительность, гибкость и плотность в корпусе, наполовину более компактном, чем у обычного блейд-сервера. Лучшая в отрасли сбалансированная плотность этого устройства позволяет поддерживать 24 слота DIMM и подсистему ввода/вывода с полосой пропускания до 80 Гбит/с. Высокая плотность, отличная производительность и широкая полоса пропускания этого сервера повышают быстродействие, экономичность и эффективность корпоративных приложений. Для создания системы, которая обладает возможностью размещения большого объема данных, была использована система хранения данных NetApp E5400. Данная СХД позволяет обеспечить объем «сырого» пространства до 240TB. Установка оборудования такого класса потребовало провести модернизацию инженерной инфраструктуры ЦОДа. Для регулирования и контроля воздушных потоков в ЦОД, была произведена замена серверных стоек. Расстановка стоек была произведена таким образом, чтобы сформировать «горячие/холодные коридоры» и повысить эффективность охлаждения. Модернизация системы электроснабжения и распределения электропитания, установка нового распределительного щита и современных стоечных PDU позволило упорядочить схему электропитания электрооборудования ЦОД в целом, эффективно обеспечить более высокую плотность мощности на шкаф, упростить эксплуатацию, демонтировать старые линии электропитания, не соответствующие текущим нормативным требованиям. Электрическая проводка выполнена кабельными линиями класса нг(А)-LS открыто по металлическим сетчатым лоткам.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+      <!-- <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            
+              <h4>Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            
+            <div class="col-lg-6">
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+  
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span>ООО "ИНТАНТ-Сервис"</span>
+              </a>
+              <p>Cистемный интегратор, 20 летний опыт проектирования и реализация IT-проектов различного уровня сложности.</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+  
+            <!-- <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div> -->
+  
+            <!-- <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              </ul>
+            </div> -->
+  
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+              <h4>Свяжитесь с нами</h4>
+              <p>
+          ООО "Интант-Сервис"
+          г.Томск ул. Вершинина 43В <br>
+                Россия <br><br>
+                <strong>Телефон:</strong> (3822) 56-30-80 <br>
+                <strong>Почта:</strong> info@intant.ru<br>
+              </p>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>ООО "ИНТАНТ-Сервис"</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+          Designed by <a>Young Student</a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static  'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+<script src="{% static  'assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static  'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static  'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static  'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static  'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static  'assets/vendor/php-email-form/validate.js' %}"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

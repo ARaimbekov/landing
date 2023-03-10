@@ -34,8 +34,40 @@ def index(request):
     return render(request, 'index.html', context=context)
 
 
-def send_message(name, email, subject, message):
-    pass
+def portfolio1(request):
+    return render(request, 'portfolio-details_tsu.html')
+
+
+def portfolio2(request):
+    return render(request, 'portfolio-details_tpu.html')
+
+
+def portfolio3(request):
+    return render(request, 'portfolio-details_lk.html')
+
+
+def portfolio4(request):
+    return render(request, 'portfolio-details_tusur.html')
+
+
+def portfolio5(request):
+    return render(request, 'portfolio-details_ato.html')
+
+
+def portfolio6(request):
+    return render(request, 'portfolio-details_tnk.html')
+
+
+def portfolio7(request):
+    return render(request, 'portfolio-details_kkm.html')
+
+
+def portfolio8(request):
+    return render(request, 'portfolio-details_tvt.html')
+
+
+def portfolio9(request):
+    return render(request, 'portfolio-details_rnf.html')
 
 
 def get_file(request):

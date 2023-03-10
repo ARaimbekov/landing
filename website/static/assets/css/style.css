@@ -1306,7 +1306,9 @@ section {
 }
 
 .portfolio-details .portfolio-description p {
-  padding: 0;
+  padding: -1px;
+  height: auto;
+  width: 1000px;
 }
 
 /*--------------------------------------------------------------

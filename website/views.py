@@ -11,8 +11,8 @@ def index(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            send_message(form.cleaned_data['name'], form.cleaned_data['email'], form.cleaned_data['subject'], form.cleaned_data['message'] )
-            context = {'success':1}
+            # send_message(form.cleaned_data['name'], form.cleaned_data['email'], form.cleaned_data['subject'], form.cleaned_data['message'] )
+            # context = {'success':1}
             list_answ = {}
             name = request.POST['name']
             email = request.POST['email']
@@ -21,9 +21,9 @@ def index(request):
             with open("./media/request.txt", "a") as file:
                 file.write('\n')
                 file.write('--------------'+ '\n')
-                file.write('Имя' + name + 'Е-mail' + email + '\n')
-                file.write('Тема письма'+ '\n' + subject)
-                file.write('Текст письма' + '\n' + message)
+                file.write('Имя: ' + name + 'Е-mail: ' + email + '\n')
+                file.write('Тема письма: '+ '\n' + subject)
+                file.write('Текст письма: ' + '\n' + message)
 
             return redirect(request.path)
         else:

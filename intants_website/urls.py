@@ -5,7 +5,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(('website.urls', 'website'), namespace='website'))
+    path('', include(('website.urls', 'website'), namespace='website')),
+    path('', include('django_prometheus.urls'))
 ]
 
 if settings.DEBUG:

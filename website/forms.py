@@ -13,6 +13,12 @@ class ContactForm(forms.Form):
             attrs={'placeholder': 'E-mail', 'class': 'form-control', 'type':'email'}
         )
     )
+    
+    number = forms.CharField(
+        widget=forms.EmailInput(
+            attrs={'placeholder': 'Номер телефона', 'class': 'form-control', 'type':'char'}
+        )
+    )
 
     subject = forms.CharField(
         max_length=20,

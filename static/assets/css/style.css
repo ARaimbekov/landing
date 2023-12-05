@@ -17,6 +17,18 @@ body {
   color: #444444;
 }
 
+/* Добавляем стили для углового текста */
+.corner-text {
+  position: absolute;
+  top: 10px; /* Регулируйте положение текста по вертикали */
+  right: 10px; /* Регулируйте положение текста по горизонтали */
+  background-color: #ff5722; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
 a {
   color: #4154f1;
   text-decoration: none;
@@ -1688,6 +1700,15 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
+  background: #4154f1;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.send_msg {
   background: #4154f1;
   border: 0;
   padding: 10px 30px;

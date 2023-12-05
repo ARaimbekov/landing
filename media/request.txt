@@ -1,6 +1,19 @@
 
 --------------
-ИмяYoung StudentЕ-mailtest@mail.ru
-Тема письма
-TestТекст письма
-Test message for
+Имя: AzimЕ-mail: raim@mail.ru
+891387821
+Тема письма: 
+RecordТекст письма: 
+Тестовое сообщение 
+--------------
+Имя: AzimTestЕ-mail: raim.azim@mail.ru
+89138671411
+Тема письма: 
+Test2Текст письма: 
+Test 21 dcs cdsc sdc
+--------------
+Имя: YasminЕ-mail: UpLVxq.qhwtptw@lustrum.cfd
+1
+Тема письма: 
+Everleigh FrankТекст письма: 
+Everleigh Frank

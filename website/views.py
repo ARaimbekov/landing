@@ -3,11 +3,15 @@ from django.http import FileResponse
 from .forms import *
 from django.core.mail import send_mail
 from django.shortcuts import redirect
+from django.contrib.sessions.models import Session
+from django.utils import timezone
+
 
 
 # Create your views here.
 def index(request):
     context = {}
+    
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -16,12 +20,13 @@ def index(request):
             list_answ = {}
             name = request.POST['name']
             email = request.POST['email']
+            number = request.POST['number']
             subject = request.POST['subject']
             message = request.POST['message']
             with open("./media/request.txt", "a") as file:
                 file.write('\n')
                 file.write('--------------'+ '\n')
-                file.write('Имя: ' + name + 'Е-mail: ' + email + '\n')
+                file.write('Имя: ' + name + 'Е-mail: ' + email + '\n' + number + '\n')
                 file.write('Тема письма: '+ '\n' + subject)
                 file.write('Текст письма: ' + '\n' + message)
 

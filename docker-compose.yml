@@ -19,6 +19,8 @@ services:
       - ./media:/app/media
     ports:
       - "80:80"
+    expose:
+      - "8000"
     depends_on:
       - web
     networks:
